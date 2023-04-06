@@ -1,0 +1,9 @@
+# github.com/asaskevich/govalidator v0.0.0-20230301143203-a9d515a09cc2
+## explicit; go 1.13
+github.com/asaskevich/govalidator
+# github.com/dimchansky/utfbom v1.1.1
+## explicit
+github.com/dimchansky/utfbom
+# github.com/goodhosts/hostsfile v0.1.1
+## explicit; go 1.17
+github.com/goodhosts/hostsfile

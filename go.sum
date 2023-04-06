@@ -1,0 +1,6 @@
+github.com/asaskevich/govalidator v0.0.0-20230301143203-a9d515a09cc2 h1:DklsrG3dyBCFEj5IhUbnKptjxatkF07cF2ak3yi77so=
+github.com/asaskevich/govalidator v0.0.0-20230301143203-a9d515a09cc2/go.mod h1:WaHUgvxTVq04UNunO+XhnAqY/wQc+bxr74GqbsZ/Jqw=
+github.com/dimchansky/utfbom v1.1.1 h1:vV6w1AhK4VMnhBno/TPVCoK9U/LP0PkLCS9tbxHdi/U=
+github.com/dimchansky/utfbom v1.1.1/go.mod h1:SxdoEBH5qIqFocHMyGOXVAybYJdr71b1Q/j0mACtrfE=
+github.com/goodhosts/hostsfile v0.1.1 h1:SqRUTFOshOCon0ZSXDrW1bkKZvs4+5pRgYFWySdaLno=
+github.com/goodhosts/hostsfile v0.1.1/go.mod h1:lXcUP8xO4WR5vvuQ3F/N0bMQoclOtYKEEUnyY2jTusY=
