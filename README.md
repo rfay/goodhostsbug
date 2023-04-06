@@ -1,0 +1,2 @@
+# goodhostsbug
+Demonstrate goodhosts bug
