@@ -20,13 +20,13 @@ func main() {
 		panic(err)
 	}
 
+	// If HostsPerLine() is called before hf.Add(), we get a panic on hf.Add().
+	hf.HostsPerLine(8)
+
 	err = hf.Add(ip, hostname)
 	if err != nil {
 		panic(err)
 	}
-
-	// If HostsPerLine() is called before hf.Add(), we get a panic on hf.Add().
-	hf.HostsPerLine(8)
 
 	err = hf.Flush()
 	if err != nil {
