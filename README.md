@@ -1,6 +1,8 @@
 # goodhostsbug
 Demonstrate goodhosts bug
 
+`go get -u && go mod tidy`
+
 Build with `go install`
 
 Run with `goodhostsbug`
