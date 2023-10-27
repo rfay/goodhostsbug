@@ -1,26 +1,35 @@
 # goodhostsbug
-Demonstrate goodhosts bug
+Demonstrate goodhosts comments bug
 
 `go get -u && go mod vendor && go mod tidy`
 
 Build with `go install`
 
-Run with `goodhostsbug`
-
 macOS: Install the default macOS /etc/hosts file from [here](hosts)
 
-On the "broken" branch you get this:
+Run with `sudo ~/go/bin/goodhostsbug 127.0.0.1 example.com`
 
-Result is 
+Now inspect the /etc/hosts file. It will have incorrect information, with the original comments mangled and mostly destroyed, and in the wrong place.
+
+The original /etc/hosts was 
 ```
-$ goodhostsbug
-panic: runtime error: index out of range [6] with length 4
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+127.0.0.1	localhost
+255.255.255.255	broadcasthost
+::1             localhost
 
-goroutine 1 [running]:
-github.com/goodhosts/hostsfile.(*Hosts).Add(0x140002ad8f0, {0x10109e3a0, 0x9}, {0x140001d3850?, 0x1, 0x1})
-	/Users/rfay/workspace/goodhostsbug/vendor/github.com/goodhosts/hostsfile/hosts.go:167 +0x3ec
-main.main()
-	/Users/rfay/workspace/goodhostsbug/main.go:15 +0x80
 ```
 
-On the "main" branch, with the HostsPerLine() later, you get predictable behavior.
+But now it's pretty destroyed, with only one small part of comments remaining, in the wrong place:
+
+```
+127.0.0.1 localhost xxx.ddev.site
+255.255.255.255 broadcasthost
+::1 localhost
+  # Host Database
+```
