@@ -1,7 +1,7 @@
 # goodhostsbug
 Demonstrate goodhosts bug
 
-`go get -u && go mod tidy`
+`go get -u && go mod vendor && go mod tidy`
 
 Build with `go install`
 
